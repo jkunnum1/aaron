@@ -1,0 +1,72 @@
+html
+{
+	font-family: "Open Sans";
+	background-color: #62D2C2;
+	color: white;
+}
+
+#navitem
+{
+	color: #F06163;
+}
+
+h1, h2, h3, h4
+{
+	font-family: "Tiempo";
+}
+
+#top
+{
+	text-align: center;
+	color: white;
+}
+
+.waves-effect.waves-light.btn-flat
+{
+	color: white;
+	background-color: #62D2C2;
+	border-radius: 7px;
+}
+
+#email
+{
+	font-size: 20px;
+	border: none;
+	padding: 5px 15px 5px 15px;
+	border-radius: 7px;
+	color: #F06163;
+	background-color: white;
+
+}
+
+#submit
+{
+	background-color: #F06163;
+	border: none;
+	padding: 15px;
+	border-radius: 7px;
+	color: #403E41;
+	margin-left: 25px;
+}
+
+form
+{
+	margin-top: 40px;
+}
+
+#allonslack
+{
+	border: none;
+}
+
+#screenshot
+{
+	background-color: white;
+}
+
+#howitworks
+{
+	background-color:white;
+	color: white;
+	padding: 0px;
+}
