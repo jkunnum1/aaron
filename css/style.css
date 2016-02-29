@@ -70,3 +70,21 @@ form
 {
 	margin-top: 25px;
 }
+
+a 
+{
+	text-decoration-line: none;
+	color: white;
+	display: block;
+	text-align: left;
+}
+
+.contactInfo 
+{
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+
