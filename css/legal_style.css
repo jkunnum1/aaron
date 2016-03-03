@@ -1,24 +1,33 @@
 html
 {
 	font-family: "Open Sans";
-	background-color: #62D2C2;
-	color: white;
+	background-color: #C7D4D8;
+	color: #325177;
 }
 
 #navitem
 {
-	color: #F06163;
+	color: white;
 }
 
-h1, h2, h3, h4
+h1
 {
 	font-family: "Tiempo";
+}
+
+h3, h2
+{
+	font-family: "Open Sans"
 }
 
 #top
 {
 	text-align: center;
-	color: white;
+}
+
+#allonslack
+{
+	opacity: 0.7;
 }
 
 .waves-effect.waves-light.btn-flat
@@ -34,18 +43,18 @@ h1, h2, h3, h4
 	border: none;
 	padding: 5px 15px 5px 15px;
 	border-radius: 7px;
-	color: #F06163;
+	color: #485A63;
 	background-color: white;
 
 }
 
 #submit
 {
-	background-color: #F06163;
+	background-color: #CF7275;
 	border: none;
 	padding: 15px;
 	border-radius: 7px;
-	color: #403E41;
+	color: white;
 	margin-left: 25px;
 }
 
