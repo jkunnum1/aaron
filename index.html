@@ -11,6 +11,17 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.collapsible').collapsible({
+          accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+      });
+      var react = document.getElementById('faq-question');
+      react.onclick = function() {
+        this.style.backgroundColor = 'green';
+      }
+    </script>
 
     <body>
       <div class="row">
@@ -52,8 +63,9 @@
             </div> <!-- email input end -->
 
             <div class="col s4">
-              <input type="submit" id="submit" value="Add Aaron to Slack for Free"></submit>
-            </div> <!-- submit button end -->
+              <a href="https://slack.com/oauth/authorize?scope=incoming-webhook,bot&client_id=19221024294.23919050657" style="text-align: center; padding-top: 10px;"><img alt="Add to Slack" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+			  </a>
+            </div>
           </form>
 
         </div> <!-- container end -->
@@ -114,46 +126,57 @@
     <img class="responsive-img" src="images/Questioning_gray.png" height="auto" style="padding-top: 30px;">
     </div>
     <div class="col s6">
-      <h1 style="font-size: 48px; margin-top: 50px">
+      <h1 style="font-size: 48px; margin-top: 50px;">
         Frequently Asked Questions
       </h1>
-      <h3 style="font-size: 24px;">
-        What kinds of legal questions can I ask Aaron?
-      </h3>
-      <h3 style="font-size: 24px;">
-        Will the layers that Aaron connects me with be top-notch?
-      </h3>
-      <h3 style="font-size: 24px;">
-        Will my identity be anonymous?
-      </h3>
-      <h3 style="font-size: 24px;">
-        Is my Slack and the rest of my team's identity anonymous?
-      </h3>
-      <h3 style="font-size: 24px;">
-        Will anyone else get to see my chat with the lawyer?
-      </h3>
-      <h3 style="font-size: 24px;">
-        How does Aaron allow me to chat with outside lawyers directly in Slack?
-      </h3>
-      <h3 style="font-size: 24px;">
-        Once Aaron connects me with a lawyer in Slack, how long do we have to chat?
-      </h3>
-      <h3 style="font-size: 24px;">
-        How much will using Aaron cost me?
-      </h3>
-      <h3 style="font-size: 24px;">
-        Why do lawyers use Aaron?
-      </h3>
-
+        <div style="color: black;">
+        <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">live_help</i>What kinds of legal questions can I ask Aaron?</div>
+          <div class="collapsible-body" style="background-color: #fff;"><p>Ask Aaron any legal question you'd like. Aaron's network of lawyers cover many areas of law.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">thumb_up</i>Will the layers that Aaron connects me with be top-notch?</div>
+          <div class="collapsible-body" style="background-color: #fff;"><p>You know it! Aaron carefully vets every lawyer that gets added to our network.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">visibility</i>Is my identity anonymous?</div>
+          <div class="collapsible-body" style="background-color: #fff;"><p>Yes. Your identity will be kept completely anonymous. The lawyers that you connect with will not know who you are.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">assignment_ind</i>Is my Slack and the rest of my team's identity anonymous?</div>
+          <div class="collapsible-body" style="background-color: #fff;"><p>Yes. Lawyers won't know what company you or your colleagues work for. Everyone that is with you in Slack will be kept anonymous.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">chat_bubble</i>Will anyone else get to see my chat with the lawyer?</div>
+          <div class="collapsible-body" style="background-color: #fff;"><p>Not unless you show them!</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">supervisor_account</i>How does Aaron allow me to chat with outside lawyers directly in Slack?</div>
+          <div class="collapsible-body" style="background-color: #fff;"><p>Our technology enables Aaron to facilitate conversations between people in your Slack and lawyers that are not in your Slack. Aaron helps relay the messages back and forth, but lawyers never actually get added to your Slack. Scroll up to check out the screenshot if you're still befuddled.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_5</i>Once Aaron connects me with a lawyer in Slack, how long do we have to chat?</div>
+          <div class="collapsible-body" style="background-color: #fff;"><p>You'll get 5 minutes to chat with the lawyer, so make it count! Don't worry, you'll get the lawyer's contact info at the end of the chat in case you need to get in touch.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">attach_money</i>How much will using Aaron cost me?</div>
+          <div class="collapsible-body" style="background-color: #fff;"><p>Aaron is completely free to use for now. We'll circle back with you later this year about future pricing plans.</p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">trending_up</i>Why do lawyers use Aaron?</div>
+          <div class="collapsible-body" style="background-color: #fff;"><p>Aaron is a great way for lawyers to be helpful and meet new clients. They're happy to help!</p></div>
+        </li>
+      </ul>
+      </div>
     </div>
     <div class="col s3">
       <!-- images go into this column-->
         <img class="responsive-img" src="images/Questionbubbles.png" height="auto" style="padding-top: 30px;">
     </div>
   </div>
+
   <div class="row" style="color: white; margin: 0px; text-align: center; background-color: #434651; padding-top: 30px; padding-bottom: 50px">
-    <div class="col s2 offset-s1">
-  <div class="row" style="margin: 0px; text-align: center; background-color: #3D445D; padding-top: 30px; padding-bottom: 50px">
     <div class="col m2 offset-m1">
         <div>
         <span style="font-size: 40px; padding-left:3%;">Aaron</span>
@@ -163,8 +186,6 @@
         <span>2016 All Rights Reserved</span>
         </div>
     </div>
-    <div class="col s2">
-      <h2 class="contactInfo">INFO</h2>
     <div class="col m2">
       <h1 class="contactInfo">INFO</h1>
       <a href="#">About/History</a>
@@ -174,16 +195,12 @@
       <a href="#">Legal Network</a>
       <a href="#">Support</a>
     </div>
-    <div class="col s2">
-      <h2 class="contactInfo">LEGAL</h2>
     <div class="col m2">
       <h1 class="contactInfo">LEGAL</h1>
       <a href="#">Security</a>
       <a href="#">Terms of Service</a>
       <a href="#">Private Policy</a>
     </div>
-    <div class="col s2">
-      <h2 class="contactInfo">
     <div class="col m2">
       <h1 class="contactInfo">
         CONTACT <br>
@@ -193,8 +210,6 @@
         City, State, 10000
       </h2>
     </div>
-    <div class="col s2">
-      <h2 class="contactInfo">FOLLOW US</h1>
     <div class="col m2">
       <h1 class="contactInfo">FOLLOW US</h1>
       <a href="#">Facebook</a>
