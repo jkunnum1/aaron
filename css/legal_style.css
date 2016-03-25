@@ -95,3 +95,62 @@ a
 	padding: 0px;
 	text-align: left;
 }
+
+/*Media Queries*/
+/* Larger than mobile */
+@media (min-width: 250px) {
+	#mobile_screenshot
+	{
+		display: block;
+	}
+	#tablet_screenshot
+	{
+		display: none;
+	}
+	#desktop_screenshot
+	{
+		display: none;
+	}
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+ 	#mobile_screenshot
+	{
+		display: none;
+	}
+	#tablet_screenshot
+	{
+		display: block;
+	}
+	#desktop_screenshot
+	{
+		display: none;
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+  
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+ 	#mobile_screenshot
+	{
+		display: none;
+	}
+	#tablet_screenshot
+	{
+		display: none;
+	}
+	#desktop_screenshot
+	{
+		display: block;
+	}
+  
+
+}
