@@ -12,35 +12,26 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.collapsible').collapsible({
-          accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-        });
-      });
-      var react = document.getElementById('faq-question');
-      react.onclick = function() {
-        this.style.backgroundColor = 'green';
-      }
-    </script>
-
     <body>
       <div class="row">
         <nav class="blue-grey darken-2">
-
-          <div class="nav-wrapper">
-
-            <span style="color: white; font-size: 30px; padding-left:3%;">Aaron</span>
+    <div class="nav-wrapper">
+      <span style="color: white; font-size: 30px; padding-left:3%;">Aaron</span>
             <span style="color: white; font-size: 10px;">for Slack</span>
 
-            <ul id="nav-mobile" class="right hide-on-med-and-down" style="padding-right:3%">
-              <li><a href="#"><span id="navitem">How Aaron Works</span></a></li>
-              <li><a href="#"><span id="navitem">FAQ</span></a></li>
-              <li><a href="#"><span id="navitem">Contact Us</span></a></li>
-            </ul >
-
-          </div> <!-- nav-wrapper end-->
-        </nav>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#"><span id="navitem">How Aaron Works</span></a></li>
+        <li><a href="#"><span id="navitem">FAQ</span></a></li>
+        <li><a href="#"><span id="navitem">Contact Us</span></a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#"><span id="navitem" style="color: black;">How Aaron Works</span></a></li>
+        <li><a href="#"><span id="navitem" style="color: black;">FAQ</span></a></li>
+        <li><a href="#"><span id="navitem" style="color: black;">Contact Us</span></a></li>
+      </ul>
+    </div>
+  </nav>
       </div> <!-- row 1 nav end -->
 
       <div class="row" id="top">
@@ -48,8 +39,12 @@
 
           <div class="col s12" align="center">
             <h1 style="color: #485A63;">Hello, my name is Aaron.</h1>
+          </div>
+          <div class="col s10" align="center" style="margin-right: 0px; padding-right: 0px;">
             <span><h5 style="color: #485A63;">I'm a Slack bot that privately connects you with an elite lawyer whenever you have a legal question, right in Slack.</h5></span>
-            <span><img id="slackbubble" class="responsive-img" src="images/slackbubble.png"</span>
+          </div>
+          <div class="col s2" align="center" style="padding: 0px; margin: 0px;">
+            <span><img id="slackbubble" class="responsive-img" src="images/slackbubble.png" style="padding: 0px; margin: 0px;"></span>
           </div>
 
         </div> <!-- container end-->
@@ -69,14 +64,14 @@
 			  </a>
             </div>
           </form>  -->
-          <div class="col m6 offset-m3">
+          <div class="col s12">
+          
           <script type="text/javascript">
-		          window.Maitre = { uuid: "MF3317cb28c4" };
-		  </script>
-		  <script data-maitre src='https://maitreapp.co/widget.js' async></script>
-		  </div>
+            window.Maitre = { uuid: "MF3317cb28c4" };
+          </script>
+          <script async="" src="https://maitreapp.co/widget.js" data-maitre=""> </script>
 
-
+		      </div>
 
         </div> <!-- container end -->
       </div> <!-- row2 end -->
@@ -238,5 +233,10 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+      $(".button-collapse").sideNav();
+    });
+    </script>
     </body>
   </html>
