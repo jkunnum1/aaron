@@ -1,0 +1,243 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Custom CSS-->
+      <link type="text/css" rel="stylesheet" href="css/legal_style.css" media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.collapsible').collapsible({
+          accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+      });
+      var react = document.getElementById('faq-question');
+      react.onclick = function() {
+        this.style.backgroundColor = 'green';
+      }
+    </script>
+
+    <body>
+      <div class="row">
+        <nav class="blue-grey darken-2">
+
+          <div class="nav-wrapper">
+
+            <span style="color: white; font-size: 30px; padding-left:3%;">Aaron</span>
+            <span style="color: white; font-size: 10px;">for Slack</span>
+
+            <ul id="nav-mobile" class="right hide-on-med-and-down" style="padding-right:3%">
+              <li><a href="#"><span id="navitem">How Aaron Works</span></a></li>
+              <li><a href="#"><span id="navitem">FAQ</span></a></li>
+              <li><a href="#"><span id="navitem">Contact Us</span></a></li>
+            </ul >
+
+          </div> <!-- nav-wrapper end-->
+        </nav>
+      </div> <!-- row 1 nav end -->
+
+      <div class="row" id="top">
+        <div class="container">
+
+          <div class="col s12" align="center" style="margin-bottom: 5%; margin-top: 3%;">
+            <h1 style="color: #485A63; font-size: 40px;">Aaron helps lawyers connect with top tech startups for 
+            five minute instant message consultations.</h1>
+            <span><h5 style="color: #485A63;">Bring in high quality leads and build your network in the tech startup world.</h5></span>
+          </div>
+
+        </div> <!-- container end-->
+      </div> <!-- row1 end-->
+
+  <div class="row" style="margin:0px; background-color:white;">
+      <div id="screenshot" style="text-align: center;"> <!-- screenshot start-->
+        <h1 style="color: #325177; margin-top: 0px; padding-top:70px; font-size: 40px; margin-bottom: 0px; padding-bottom: 60px">Here's how Aaron works for lawyers</h1>
+      </div>
+  </div>
+
+  <div class="row" id="screenshot" style="margin: 0px;">
+    <div id="screenshot" style="text-align: center;"> <!-- screenshot start-->
+        <div class="col s12 m3">
+          <img id="screenshot" class="responsive-img" src="images/apply.png" style="padding: 50px;">
+          <img id="screenshot" class="responsive-img" src="images/1_gray.png" style="width: 15%; height: auto;">
+          <h2 style="color: #325177; font-size: 20px; padding: 0px 10px 10px 10px;">
+            Apply and get approved to join Aaron's network of legal experts
+          </h2>
+        </div>
+        <div class="col s12 m3">
+          <img id="screenshot" class="responsive-img" src="images/notif.png" style="padding: 50px;">
+          <img id="screenshot" class="responsive-img" src="images/2_gray.png" style="width: 15%; height: auto;">
+          <h2 style="color: #325177; font-size: 20px; padding: 0px 10px 10px 10px;">
+            Anonymously ask Aaron any legal question right in Slack
+          </h2>
+        </div>
+        <div class="col s12 m3">
+          <img id="screenshot" class="responsive-img" src="images/connect.png" style="padding: 50px;">
+          <img id="screenshot" class="responsive-img" src="images/3_gray.png" style="width: 15%; height: auto;">
+          <h2 style="color: #325177; font-size: 20px; padding: 0px 10px 10px 10px;">
+            If you decide to accept the lead, 
+            you'll get connected for a 5 minute 
+            instant message consultation
+          </h2>
+        </div>
+        <div class="col s12 m3">
+          <img id="screenshot" class="responsive-img" src="images/contactinfo.png" style="padding: 50px;">
+          <img id="screenshot" class="responsive-img" src="images/4_gray.png" style="width: 15%; height: auto;">
+          <h2 style="color: #325177; font-size: 20px; padding: 0px 10px 10px 10px;">
+            We'll send them your contact info at the conclusion of the consultation
+          </h2>
+        </div>
+    </div>
+  </div>
+
+  <div class="row" style="color: #DAE9EE; padding-top: 3%; text-align:center">
+    <div class="col m10 offset-m1">
+      <h1 style="font-size: 40px; color: #455A64"> If you're interested in joining Aaron's network of legal experts, please apply below and we'll be in touch:</h1>
+    </div>
+  </div>
+
+<div class="row">
+  <form class="col s8 offset-m2">
+    <div class="row">
+        <div class="input-field col s6">
+          <input  id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+    </div> <!-- row end -->
+
+    <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="text" class="validate">
+          <label for="email">Email</label>
+        </div>
+    </div> <!-- row end -->
+
+  </form>
+
+</div> <!-- row end-->
+
+  <div class="row">
+    <div class="col m8 offset-m2" style="background-color: white; margin-top: 3%">
+        <p style="color:#434651"> Areas of Law</p>
+
+          <div class="row">
+            <div class="col m2">
+            <input type="checkbox" id="administrative">
+            <label for="administrative" style="color: #434651; margin-right: 3%;">Administrative</label>
+          </div>
+                      <div class="col m2">
+            <input type="checkbox" id="advertising">
+            <label for="advertising" style="color: #434651; margin-right: 3%;">Advertisting</label>
+          </div>
+         </div> <!-- first row of form end-->
+
+          <input type="checkbox" id="banking">
+          <label for="banking" style="color: #434651; margin-right: 3%;">Banking</label>
+
+          <input type="checkbox" id="business">
+          <label for="business" style="color: #434651; margin-right: 3%;">Business</label>
+
+          <input type="checkbox" id="consumer">
+          <label for="consumer" style="color: #434651; margin-right: 3%;">Consumer</label>
+
+          <input type="checkbox" id="copyright">
+          <label for="copyright" style="color: #434651; margin-right: 3%;">Copyright</label>
+
+          <input type="checkbox" id="corporate">
+          <label for="corporate" style="color: #434651; margin-right: 3%;">Corporate</label>
+
+          <input type="checkbox" id="employment">
+          <label for="employment" style="color: #434651; margin-right: 3%;">Employment</label>
+
+          <input type="checkbox" id="health">
+          <label for="health" style="color: #434651; margin-right: 3%;">Health</label>
+
+          <input type="checkbox" id="internet">
+          <label for="internet" style="color: #434651; margin-right: 3%;">Internet</label>
+
+          <input type="checkbox" id="patent">
+          <label for="patent" style="color: #434651; margin-right: 3%;">Patent</label>
+
+          <input type="checkbox" id="privacy">
+          <label for="privacy" style="color: #434651; margin-right: 3%;">Privacy</label>
+
+          <input type="checkbox" id="security">
+          <label for="security" style="color: #434651; margin-right: 3%;">Security</label>
+
+          <input type="checkbox" id="technology">
+          <label for="technology" style="color: #434651; margin-right: 3%;">Technology</label>
+
+          <input type="checkbox" id="trademark">
+          <label for="trademark" style="color: #434651; margin-right: 3%;">Trademark</label>
+          
+          <input type="checkbox" id="other">
+          <label for="other" style="color: #434651; margin-right: 3%;">Other</label>
+          <input type="text">
+
+        </form>
+    </div>
+  </div> <!-- row end -->
+
+  <div class="row" style="color: white; margin: 0px; text-align: center; background-color: #434651; padding-top: 30px; padding-bottom: 50px">
+    <div class="col m2 offset-m1">
+        <div>
+        <span style="font-size: 40px; padding-left:3%;">Aaron</span>
+        <span style="font-size: 15px;">for Slack</span>
+        </div>
+        <div>
+        <span>2016 All Rights Reserved</span>
+        </div>
+    </div>
+    <div class="col m2">
+      <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">INFO</h1>
+      <a href="#">About/History</a>
+      <a href="#">Our Team</a>
+      <a href="#">FAQ</a>
+      <a href="#">Company Users</a>
+      <a href="#">Legal Network</a>
+      <a href="#">Support</a>
+    </div>
+    <div class="col m2">
+      <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">LEGAL</h1>
+      <a href="#">Security</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Private Policy</a>
+    </div>
+    <div class="col m2">
+      <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">
+        CONTACT <br>
+        hello@askaaron.io <br>
+        555 555.5555 <br> <br>
+        10001 Some Street <br>
+        City, State, 10000
+      </h2>
+    </div>
+    <div class="col m2">
+      <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">FOLLOW US</h1>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Google+</a>
+      <a href="#">Blog</a>
+    </div>
+
+  </div>
+        
+      </div><!-- screenshot end-->
+  </div>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>
