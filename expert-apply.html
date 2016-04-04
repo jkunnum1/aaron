@@ -63,23 +63,23 @@
 
   <div class="row" id="screenshot" style="margin: 0px;">
     <div id="screenshot" style="text-align: center;"> <!-- screenshot start-->
-        <div class="col s12 m3">
-          <img id="screenshot" class="responsive-img" src="images/apply.png" style="padding: 50px;">
+        <div class="col s12 m6 l3">
+          <img id="screenshot" class="responsive-img" src="images/apply.png" style="padding: 10px">
           <img id="screenshot" class="responsive-img" src="images/1_gray.png" style="width: 15%; height: auto;">
           <h2 style="color: #325177; font-size: 20px; padding: 0px 10px 10px 10px;">
             Apply and get approved to join Aaron's network of legal experts
           </h2>
         </div>
-        <div class="col s12 m3">
-          <img id="screenshot" class="responsive-img" src="images/notif.png" style="padding: 50px;">
+        <div class="col s12 m6 l3">
+          <img id="screenshot" class="responsive-img" src="images/notif.png" style="padding: 10px">
           <img id="screenshot" class="responsive-img" src="images/2_gray.png" style="width: 15%; height: auto;">
           <h2 style="color: #325177; font-size: 20px; padding: 0px 10px 10px 10px;">
             Get notified on your smartphone or laptop whenever there's a 
 relevant lead
           </h2>
         </div>
-        <div class="col s12 m3">
-          <img id="screenshot" class="responsive-img" src="images/connect.png" style="padding: 50px;">
+        <div class="col s12 m6 l3">
+          <img id="screenshot" class="responsive-img" src="images/connect.png" style="padding: 10px">
           <img id="screenshot" class="responsive-img" src="images/3_gray.png" style="width: 15%; height: auto;">
           <h2 style="color: #325177; font-size: 20px; padding: 0px 10px 10px 10px;">
             If you decide to accept the lead, 
@@ -87,8 +87,8 @@ relevant lead
             instant message consultation
           </h2>
         </div>
-        <div class="col s12 m3">
-          <img id="screenshot" class="responsive-img" src="images/contactinfo.png" style="padding: 50px;">
+        <div class="col s12 m6 l3">
+          <img id="screenshot" class="responsive-img" src="images/contactinfo.png" style="padding: 10px">
           <img id="screenshot" class="responsive-img" src="images/4_gray.png" style="width: 15%; height: auto;">
           <h2 style="color: #325177; font-size: 20px; padding: 0px 10px 10px 10px;">
             We'll send them your contact info at the conclusion of the consultation
@@ -103,92 +103,109 @@ relevant lead
     </div>
   </div>
 
-<div class="row">
-  <form class="col s8 offset-m2">
-    <div class="row">
-        <div class="input-field col s6">
-          <input  id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-        </div>
-
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
-    </div> <!-- row end -->
+  <form>
 
     <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="text" class="validate">
-          <label for="email">Email</label>
+      <div class="col s8 offset-m2">
+        <div class="row">
+          <div class="input-field col s6">
+            <span style="font-size: 18px;">First Name</span>
+            <input  id="first_name" type="text" class="validate">
+          </div>
+
+          <div class="input-field col s6">
+            <span style="font-size: 18px;">Last Name</span>
+            <input id="last_name" type="text" class="validate">
+          </div>
+        </div> <!-- row end -->
+
+        <div class="row">
+          <div class="input-field col s12">
+            <span style="font-size: 18px;">Email</span>
+            <input id="expert_email" type="email" class="validate">
+          </div>
+        </div> <!-- row end -->
+
+        <div class="row">
+          <div class="input-field col s12">
+            <span style="font-size: 18px;">Company Name</span>
+            <input id="expert_company" type="text" class="validate">
+          </div>
+        </div> <!-- row end -->
+
+        <div class="row">
+          <span style="font-size: 18px; padding-left: 15px;">Areas of Law</span>
+          <div class="col s12" style="background-color: white; margin: 10px; border-radius: 10px; border-color: #455A64; border-style: solid; padding: 20px;">
+            <span style="font-size: 18px;">Please check all that apply</span>
+            <div class="row">
+              <div class="col s12 m4">
+                <input type="checkbox" id="administrative">
+                <label for="administrative" style="color: #434651; padding-left: 25px;">Administrative</label></br>
+
+                <input type="checkbox" id="advertising">
+                <label for="advertising" style="color: #434651; padding-left: 25px;">Advertisting</label></br>
+
+                <input type="checkbox" id="banking">
+                <label for="banking" style="color: #434651; padding-left: 25px;">Banking</label></br>
+
+                <input type="checkbox" id="business">
+                <label for="business" style="color: #434651; padding-left: 25px;">Business</label></br>
+
+                <input type="checkbox" id="consumer">
+                <label for="consumer" style="color: #434651; padding-left: 25px;">Consumer</label></br>
+              </div>
+
+              <div class="col s12 m4">
+                <input type="checkbox" id="copyright">
+                <label for="copyright" style="color: #434651; padding-left: 25px;">Copyright</label></br>
+
+                <input type="checkbox" id="corporate">
+                <label for="corporate" style="color: #434651; padding-left: 25px;">Corporate</label></br>
+
+                <input type="checkbox" id="employment">
+                <label for="employment" style="color: #434651; padding-left: 25px;">Employment</label></br>
+
+                <input type="checkbox" id="health">
+                <label for="health" style="color: #434651; padding-left: 25px;">Health</label></br>
+
+                <input type="checkbox" id="internet">
+                <label for="internet" style="color: #434651; padding-left: 25px;">Internet</label></br>
+              </div>
+
+              <div class="col s12 m4">
+                <input type="checkbox" id="patent">
+                <label for="patent" style="color: #434651; padding-left: 25px;">Patent</label></br>
+
+                <input type="checkbox" id="privacy">
+                <label for="privacy" style="color: #434651; padding-left: 25px;">Privacy</label></br>
+
+                <input type="checkbox" id="security">
+                <label for="security" style="color: #434651; padding-left: 25px;">Security</label></br>
+
+                <input type="checkbox" id="technology">
+                <label for="technology" style="color: #434651; padding-left: 25px;">Technology</label></br>
+
+                <input type="checkbox" id="trademark">
+                <label for="trademark" style="color: #434651; padding-left: 25px;">Trademark</label></br>
+              </div>
+
+              <div class="col s12" style="padding-top: 30px;">
+                <input type="checkbox" id="other">
+                <label for="other" style="color: #434651; padding-left: 25px;">Other</label></br>
+                <div class="input-field col s12" style="padding-left: 20px;">
+                <span style="color: #434651;">Please specify</span>
+                <input id="other_input" type="text" class="validate">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div> <!-- row end -->
-
-  </form>
-
-</div> <!-- row end-->
-
-  <div class="row">
-    <div class="col m8 offset-m2" style="background-color: white; margin-top: 3%">
-        <p style="color:#434651"> Areas of Law</p>
-
-          <div class="row">
-            <div class="col m2">
-            <input type="checkbox" id="administrative">
-            <label for="administrative" style="color: #434651; margin-right: 3%;">Administrative</label>
-          </div>
-                      <div class="col m2">
-            <input type="checkbox" id="advertising">
-            <label for="advertising" style="color: #434651; margin-right: 3%;">Advertisting</label>
-          </div>
-         </div> <!-- first row of form end-->
-
-          <input type="checkbox" id="banking">
-          <label for="banking" style="color: #434651; margin-right: 3%;">Banking</label>
-
-          <input type="checkbox" id="business">
-          <label for="business" style="color: #434651; margin-right: 3%;">Business</label>
-
-          <input type="checkbox" id="consumer">
-          <label for="consumer" style="color: #434651; margin-right: 3%;">Consumer</label>
-
-          <input type="checkbox" id="copyright">
-          <label for="copyright" style="color: #434651; margin-right: 3%;">Copyright</label>
-
-          <input type="checkbox" id="corporate">
-          <label for="corporate" style="color: #434651; margin-right: 3%;">Corporate</label>
-
-          <input type="checkbox" id="employment">
-          <label for="employment" style="color: #434651; margin-right: 3%;">Employment</label>
-
-          <input type="checkbox" id="health">
-          <label for="health" style="color: #434651; margin-right: 3%;">Health</label>
-
-          <input type="checkbox" id="internet">
-          <label for="internet" style="color: #434651; margin-right: 3%;">Internet</label>
-
-          <input type="checkbox" id="patent">
-          <label for="patent" style="color: #434651; margin-right: 3%;">Patent</label>
-
-          <input type="checkbox" id="privacy">
-          <label for="privacy" style="color: #434651; margin-right: 3%;">Privacy</label>
-
-          <input type="checkbox" id="security">
-          <label for="security" style="color: #434651; margin-right: 3%;">Security</label>
-
-          <input type="checkbox" id="technology">
-          <label for="technology" style="color: #434651; margin-right: 3%;">Technology</label>
-
-          <input type="checkbox" id="trademark">
-          <label for="trademark" style="color: #434651; margin-right: 3%;">Trademark</label>
-          
-          <input type="checkbox" id="other">
-          <label for="other" style="color: #434651; margin-right: 3%;">Other</label>
-          <input type="text">
-
-        </form>
+        <div class="row" align="center">
+        <button type="submit" class="submit_button">Submit Application</button>
+        </div>
+      </div> <!-- row end -->
     </div>
-  </div> <!-- row end -->
+  </form>
 
   <div class="row" style="color: white; margin: 0px; text-align: center; background-color: #434651; padding-top: 30px; padding-bottom: 50px">
     <div class="col m2 offset-m1">

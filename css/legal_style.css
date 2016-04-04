@@ -195,4 +195,41 @@ a
 	text-align: center;
 }
 
+.input-field input {
+	border: none;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #455A64;
+    font-size: 16px;
+    text-indent: 20px;
+}
 
+.input-field input[type=text]:focus {
+    border-bottom: 0px solid #000;
+    box-shadow: 0 0px 0 0 #000;
+    border: none;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #455A64;
+ }
+
+ .input-field input[type=email]:focus {
+    border-bottom: 0px solid #000;
+    box-shadow: 0 0px 0 0 #000;
+    border: none;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #455A64;
+ }
+
+ .submit_button {
+ 	background-color: #FE4F52;
+ 	color: #455A64;
+	border-radius: 10px;
+	padding: 17px 50px 17px 50px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+	border:none;
+	margin-bottom: 10px;
+	font-size: 18px;
+ }
