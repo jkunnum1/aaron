@@ -1,57 +1,60 @@
   <!DOCTYPE html>
   <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <!--Custom CSS-->
-      <link type="text/css" rel="stylesheet" href="css/legal_style.css" media="screen,projection"/>
+  <head>
+  	<!--Import Google Icon Font-->
+  	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  	<!--Import materialize.css-->
+  	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  	<!--Custom CSS-->
+  	<link type="text/css" rel="stylesheet" href="css/legal_style.css" media="screen,projection"/>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+  	<!--Let browser know website is optimized for mobile-->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
 
-    <body>
-      <div class="row">
-        <nav class="blue-grey darken-2">
-    <div class="nav-wrapper">
-      <span style="color: white; font-size: 30px; padding-left:3%;">Aaron</span>
-            <span style="color: white; font-size: 10px;">for Slack</span>
+  <body>
+  	<div class="row">
+  		<nav class="blue-grey darken-2">
+  			<div class="nav-wrapper">
+  			<a href="index.html" class="brand-logo" style="padding-left: 20px;">
+  					<span style="color: white; font-size: 30px; padding-left:3%;">Aaron</span>
+  					<span style="color: white; font-size: 10px;">for Slack</span>
+  				</a>
+  				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+  				<ul class="right hide-on-med-and-down">
+  					<li><a href="expert-apply.html"><span id="navitem">Expert Application</span></a></li>
+  					<li><a href="#"><span id="navitem">How Aaron Works</span></a></li>
+  					<li><a href="#faq"><span id="navitem">FAQ</span></a></li>
+  					<li><a href="#"><span id="navitem">Contact Us</span></a></li>
+  				</ul>
+  				<ul class="side-nav" id="mobile-demo">
+  					<li><a href="expert-apply.html"><span id="navitem" style="color: black;">Expert Application</span></a></li>
+  					<li><a href="#"><span id="navitem" style="color: black;">How Aaron Works</span></a></li>
+  					<li><a href="#"><span id="navitem" style="color: black;">FAQ</span></a></li>
+  					<li><a href="#"><span id="navitem" style="color: black;">Contact Us</span></a></li>
+  				</ul>
+  			</div>
+  		</nav>
+  	</div> <!-- row 1 nav end -->
 
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#"><span id="navitem">How Aaron Works</span></a></li>
-        <li><a href="#"><span id="navitem">FAQ</span></a></li>
-        <li><a href="#"><span id="navitem">Contact Us</span></a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="#"><span id="navitem" style="color: black;">How Aaron Works</span></a></li>
-        <li><a href="#"><span id="navitem" style="color: black;">FAQ</span></a></li>
-        <li><a href="#"><span id="navitem" style="color: black;">Contact Us</span></a></li>
-      </ul>
-    </div>
-  </nav>
-      </div> <!-- row 1 nav end -->
+  	<div class="row" id="top">
+  		<div class="container">
 
-      <div class="row" id="top">
-        <div class="container">
+  			<div class="col s12" align="center">
+  				<h1 style="color: #485A63;">Hello, my name is Aaron.</h1>
+  			</div>
+  			<div class="col s10" align="center" style="margin-right: 0px; padding-right: 0px;">
+  				<span><h5 style="color: #485A63;">I'm a Slack bot that privately connects you with an elite lawyer whenever you have a legal question, right in Slack.</h5></span>
+  			</div>
+  			<div class="col s2" align="center" style="padding: 0px; margin: 0px;">
+  				<span><img id="slackbubble" class="responsive-img" src="images/slackbubble.png" style="padding: 0px; margin: 0px;"></span>
+  			</div>
 
-          <div class="col s12" align="center">
-            <h1 style="color: #485A63;">Hello, my name is Aaron.</h1>
-          </div>
-          <div class="col s10" align="center" style="margin-right: 0px; padding-right: 0px;">
-            <span><h5 style="color: #485A63;">I'm a Slack bot that privately connects you with an elite lawyer whenever you have a legal question, right in Slack.</h5></span>
-          </div>
-          <div class="col s2" align="center" style="padding: 0px; margin: 0px;">
-            <span><img id="slackbubble" class="responsive-img" src="images/slackbubble.png" style="padding: 0px; margin: 0px;"></span>
-          </div>
+  		</div> <!-- container end-->
+  	</div> <!-- row1 end-->
 
-        </div> <!-- container end-->
-      </div> <!-- row1 end-->
-
-      <div class="row">
-        <div class="container">
+  	<div class="row">
+  		<div class="container">
 
         <!--
           <form>
@@ -63,180 +66,180 @@
               <a href="https://slack.com/oauth/authorize?scope=incoming-webhook,bot&client_id=19221024294.23919050657" style="text-align: center; padding-top: 10px;"><img alt="Add to Slack" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
 			  </a>
             </div>
-          </form>  -->
-          <div class="col s12">
-          
-          <script type="text/javascript">
-            window.Maitre = { uuid: "MF3317cb28c4" };
-          </script>
-          <script async="" src="https://maitreapp.co/widget.js" data-maitre=""> </script>
+        </form>  -->
+        <div class="col s12">
 
-		      </div>
+        	<script type="text/javascript">
+        		window.Maitre = { uuid: "MF3317cb28c4" };
+        	</script>
+        	<script async="" src="https://maitreapp.co/widget.js" data-maitre=""> </script>
 
-        </div> <!-- container end -->
-      </div> <!-- row2 end -->
-
-    <div class="row" style="margin-bottom: 80px; margin-top: 40px;"> <!-- image start-->
-      <div class="col s12">
-          <img id="allonslack" class="responsive-img" src="images/allonslack_gray.png" style="padding-left: 30px">
-      </div>
-    </div> <!-- row3 image end-->
-
-  <div class="row" style="margin:0px;">
-      <div id="screenshot"> <!-- screenshot start-->
-        <img id="mobile_screenshot" class="responsive-img" style="background-color: white;"src="images/mobile_screenshot_legal.png">
-        <img id="tablet_screenshot"class="responsive-img" style="background-color: white;" src="images/tablet_screenshot_legal.png">
-        <img id="desktop_screenshot" class="responsive-img" style="background-color: white;" src="images/screenshot_gray.png">
-      </div><!-- screenshot end-->
-  </div>
-  <div class="row" style="margin:0px; background-color:white;">
-      <div id="screenshot" style="text-align: center;"> <!-- screenshot start-->
-        <h1 style="color: #325177; margin-top: 0px; padding-top: 100px; font-size: 48px; margin-bottom: 0px; padding-bottom: 50px">Chat with elite lawyers without leaving Slack</h1>
-      </div>
-  </div>
-  <div class="row" id="screenshot" style="margin: 0px;">
-    <div id="screenshot" style="text-align: center;"> <!-- screenshot start-->
-        <div class="col s12 m4">
-          <img id="screenshot" class="responsive-img" src="images/AskAaron_gray.png" style="padding: 50px;">
-          <img id="screenshot" class="responsive-img" src="images/1_gray.png" style="width: 15%; height: auto;">
-          <h2 style="color: #325177; font-size: 24px; padding: 0px 10px 10px 10px;">
-            Add Aaron to Slack
-          </h2>
         </div>
-        <div class="col s12 m4">
-          <img id="screenshot" class="responsive-img" src="images/AskQuestion_gray.png" style="padding: 50px;">
-          <img id="screenshot" class="responsive-img" src="images/2_gray.png" style="width: 15%; height: auto;">
-          <h2 style="color: #325177; font-size: 24px; padding: 0px 10px 10px 10px;">
-            Anonymously ask Aaron any legal question right in Slack
-          </h2>
-        </div>
-        <div class="col s12 m4">
-          <img id="screenshot" class="responsive-img" src="images/Chat_gray.png" style="padding: 50px;">
-          <img id="screenshot" class="responsive-img" src="images/3_gray.png" style="width: 15%; height: auto;">
-          <h2 style="color: #325177; font-size: 24px; padding: 0px 10px 10px 10px;">
-            Aaron will privately connect you with an elite lawyer for a free 5 minute chat, right in Slack
-          </h2>
-        </div>
-    </div>
-  </div>
 
-  <div class="row" style="margin: 0px; background-color: #C7D4D8; text-align: center;">
-  <div class="row" style="margin: 0px; background-color: #DCE9EE; text-align: center;">
-    <h1 style=" margin-top: 0px; padding-top: 30px; font-size: 48px;">Pricing</h1>
-    <h2 style=" margin-top: 0px; padding-bottom: 20px; font-size: 48px;">$0</h2>
-    <h2 style=" margin-top: 0px; margin-bottom: 0px; padding-bottom: 0px; font-size: 30px;">For a limited time, Aaron is free for you and your company to use.</h2>
-    <h3 style=" margin-top: 0px; padding-bottom: 30px; font-size: 24px;">We'll be in touch about future pricing later this year.</h3>
-  </div>
-  <div class="row" style="margin: 0px; text-align: center; color: white; background-color: #99ABB7;">
-    <div class="col s3">
-    <!-- images go into this column-->
-    <img class="responsive-img" src="images/Questioning_gray.png" height="auto" style="padding-top: 30px;">
-    </div>
-    <div class="col s6">
-      <h1 style="font-size: 48px; margin-top: 50px;">
-        Frequently Asked Questions
-      </h1>
-        <div style="color: black;">
-        <ul class="collapsible" data-collapsible="accordion">
-        <li>
-          <div class="collapsible-header"><i class="material-icons">live_help</i>What kinds of legal questions can I ask Aaron?</div>
-          <div class="collapsible-body" style="background-color: #fff;"><p>Ask Aaron any legal question you'd like. Aaron's network of lawyers cover many areas of law.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">thumb_up</i>Will the layers that Aaron connects me with be top-notch?</div>
-          <div class="collapsible-body" style="background-color: #fff;"><p>You know it! Aaron carefully vets every lawyer that gets added to our network.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">visibility</i>Is my identity anonymous?</div>
-          <div class="collapsible-body" style="background-color: #fff;"><p>Yes. Your identity will be kept completely anonymous. The lawyers that you connect with will not know who you are.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">assignment_ind</i>Is my Slack and the rest of my team's identity anonymous?</div>
-          <div class="collapsible-body" style="background-color: #fff;"><p>Yes. Lawyers won't know what company you or your colleagues work for. Everyone that is with you in Slack will be kept anonymous.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">chat_bubble</i>Will anyone else get to see my chat with the lawyer?</div>
-          <div class="collapsible-body" style="background-color: #fff;"><p>Not unless you show them!</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">supervisor_account</i>How does Aaron allow me to chat with outside lawyers directly in Slack?</div>
-          <div class="collapsible-body" style="background-color: #fff;"><p>Our technology enables Aaron to facilitate conversations between people in your Slack and lawyers that are not in your Slack. Aaron helps relay the messages back and forth, but lawyers never actually get added to your Slack. Scroll up to check out the screenshot if you're still befuddled.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">filter_5</i>Once Aaron connects me with a lawyer in Slack, how long do we have to chat?</div>
-          <div class="collapsible-body" style="background-color: #fff;"><p>You'll get 5 minutes to chat with the lawyer, so make it count! Don't worry, you'll get the lawyer's contact info at the end of the chat in case you need to get in touch.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">attach_money</i>How much will using Aaron cost me?</div>
-          <div class="collapsible-body" style="background-color: #fff;"><p>Aaron is completely free to use for now. We'll circle back with you later this year about future pricing plans.</p></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">trending_up</i>Why do lawyers use Aaron?</div>
-          <div class="collapsible-body" style="background-color: #fff;"><p>Aaron is a great way for lawyers to be helpful and meet new clients. They're happy to help!</p></div>
-        </li>
-      </ul>
-      </div>
-    </div>
-    <div class="col s3">
-      <!-- images go into this column-->
-        <img class="responsive-img" src="images/Questionbubbles.png" height="auto" style="padding-top: 30px;">
-    </div>
-  </div>
+    </div> <!-- container end -->
+</div> <!-- row2 end -->
 
-  <div class="row" style="color: white; margin: 0px; text-align: center; background-color: #434651; padding-top: 30px; padding-bottom: 50px">
-    <div class="col m2 offset-m1">
-        <div>
-        <span style="font-size: 40px; padding-left:3%;">Aaron</span>
-        <span style="font-size: 15px;">for Slack</span>
-        </div>
-        <div>
-        <span>2016 All Rights Reserved</span>
-        </div>
-    </div>
-    <div class="col m2">
-      <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">INFO</h1>
-      <a href="#">About/History</a>
-      <a href="#">Our Team</a>
-      <a href="#">FAQ</a>
-      <a href="#">Company Users</a>
-      <a href="#">Legal Network</a>
-      <a href="#">Support</a>
-    </div>
-    <div class="col m2">
-      <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">LEGAL</h1>
-      <a href="#">Security</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">Private Policy</a>
-    </div>
-    <div class="col m2">
-      <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">
-        CONTACT <br>
-        hello@askaaron.io <br>
-        555 555.5555 <br> <br>
-        10001 Some Street <br>
-        City, State, 10000
-      </h2>
-    </div>
-    <div class="col m2">
-      <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;" >FOLLOW US</h1>
-      <a href="#">Facebook</a>
-      <a href="#">Twitter</a>
-      <a href="#">Google+</a>
-      <a href="#">Blog</a>
-    </div>
+<div class="row" style="margin-bottom: 80px; margin-top: 40px;"> <!-- image start-->
+	<div class="col s12">
+		<img id="allonslack" class="responsive-img" src="images/allonslack_gray.png" style="padding-left: 30px">
+	</div>
+</div> <!-- row3 image end-->
 
-  </div>
-        
-      </div><!-- screenshot end-->
-  </div>
+<div class="row" style="margin:0px;">
+	<div id="screenshot"> <!-- screenshot start-->
+		<img id="mobile_screenshot" class="responsive-img" style="background-color: white;"src="images/mobile_screenshot_legal.png">
+		<img id="tablet_screenshot"class="responsive-img" style="background-color: white;" src="images/tablet_screenshot_legal.png">
+		<img id="desktop_screenshot" class="responsive-img" style="background-color: white;" src="images/screenshot_gray.png">
+	</div><!-- screenshot end-->
+</div>
+<div class="row" style="margin:0px; background-color:white;">
+	<div id="screenshot" style="text-align: center;"> <!-- screenshot start-->
+		<h1 style="color: #325177; margin-top: 0px; padding-top: 100px; font-size: 48px; margin-bottom: 0px; padding-bottom: 50px">Chat with elite lawyers without leaving Slack</h1>
+	</div>
+</div>
+<div class="row" id="screenshot" style="margin: 0px;">
+	<div id="screenshot" style="text-align: center;"> <!-- screenshot start-->
+		<div class="col s12 m4">
+			<img id="screenshot" class="responsive-img" src="images/AskAaron_gray.png" style="padding: 50px;">
+			<img id="screenshot" class="responsive-img" src="images/1_gray.png" style="width: 15%; height: auto;">
+			<h2 style="color: #325177; font-size: 24px; padding: 0px 10px 10px 10px;">
+				Add Aaron to Slack
+			</h2>
+		</div>
+		<div class="col s12 m4">
+			<img id="screenshot" class="responsive-img" src="images/AskQuestion_gray.png" style="padding: 50px;">
+			<img id="screenshot" class="responsive-img" src="images/2_gray.png" style="width: 15%; height: auto;">
+			<h2 style="color: #325177; font-size: 24px; padding: 0px 10px 10px 10px;">
+				Anonymously ask Aaron any legal question right in Slack
+			</h2>
+		</div>
+		<div class="col s12 m4">
+			<img id="screenshot" class="responsive-img" src="images/Chat_gray.png" style="padding: 50px;">
+			<img id="screenshot" class="responsive-img" src="images/3_gray.png" style="width: 15%; height: auto;">
+			<h2 style="color: #325177; font-size: 24px; padding: 0px 10px 10px 10px;">
+				Aaron will privately connect you with an elite lawyer for a free 5 minute chat, right in Slack
+			</h2>
+		</div>
+	</div>
+</div>
 
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript">
-      $(document).ready(function(){
-      $(".button-collapse").sideNav();
-    });
-    </script>
-    </body>
-  </html>
+<div class="row" style="margin: 0px; background-color: #C7D4D8; text-align: center;">
+	<div class="row" style="margin: 0px; background-color: #DCE9EE; text-align: center;">
+		<h1 style=" margin-top: 0px; padding-top: 30px; font-size: 48px;">Pricing</h1>
+		<h2 style=" margin-top: 0px; padding-bottom: 20px; font-size: 48px;">$0</h2>
+		<h2 style=" margin-top: 0px; margin-bottom: 0px; padding-bottom: 0px; font-size: 30px;">For a limited time, Aaron is free for you and your company to use.</h2>
+		<h3 style=" margin-top: 0px; padding-bottom: 30px; font-size: 24px;">We'll be in touch about future pricing later this year.</h3>
+	</div>
+	<div class="row" id="faq" style="margin: 0px; text-align: center; color: white; background-color: #99ABB7;">
+		<div class="col s3">
+			<!-- images go into this column-->
+			<img class="responsive-img" src="images/Questioning_gray.png" height="auto" style="padding-top: 30px;">
+		</div>
+		<div class="col s6">
+			<h1 style="font-size: 48px; margin-top: 50px;">
+				Frequently Asked Questions
+			</h1>
+			<div style="color: black;">
+				<ul class="collapsible" data-collapsible="accordion">
+					<li>
+						<div class="collapsible-header"><i class="material-icons">live_help</i>What kinds of legal questions can I ask Aaron?</div>
+						<div class="collapsible-body" style="background-color: #fff;"><p>Ask Aaron any legal question you'd like. Aaron's network of lawyers cover many areas of law.</p></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">thumb_up</i>Will the layers that Aaron connects me with be top-notch?</div>
+						<div class="collapsible-body" style="background-color: #fff;"><p>You know it! Aaron carefully vets every lawyer that gets added to our network.</p></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">visibility</i>Is my identity anonymous?</div>
+						<div class="collapsible-body" style="background-color: #fff;"><p>Yes. Your identity will be kept completely anonymous. The lawyers that you connect with will not know who you are.</p></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">assignment_ind</i>Is my Slack and the rest of my team's identity anonymous?</div>
+						<div class="collapsible-body" style="background-color: #fff;"><p>Yes. Lawyers won't know what company you or your colleagues work for. Everyone that is with you in Slack will be kept anonymous.</p></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">chat_bubble</i>Will anyone else get to see my chat with the lawyer?</div>
+						<div class="collapsible-body" style="background-color: #fff;"><p>Not unless you show them!</p></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">supervisor_account</i>How does Aaron allow me to chat with outside lawyers directly in Slack?</div>
+						<div class="collapsible-body" style="background-color: #fff;"><p>Our technology enables Aaron to facilitate conversations between people in your Slack and lawyers that are not in your Slack. Aaron helps relay the messages back and forth, but lawyers never actually get added to your Slack. Scroll up to check out the screenshot if you're still befuddled.</p></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">filter_5</i>Once Aaron connects me with a lawyer in Slack, how long do we have to chat?</div>
+						<div class="collapsible-body" style="background-color: #fff;"><p>You'll get 5 minutes to chat with the lawyer, so make it count! Don't worry, you'll get the lawyer's contact info at the end of the chat in case you need to get in touch.</p></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">attach_money</i>How much will using Aaron cost me?</div>
+						<div class="collapsible-body" style="background-color: #fff;"><p>Aaron is completely free to use for now. We'll circle back with you later this year about future pricing plans.</p></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">trending_up</i>Why do lawyers use Aaron?</div>
+						<div class="collapsible-body" style="background-color: #fff;"><p>Aaron is a great way for lawyers to be helpful and meet new clients. They're happy to help!</p></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col s3">
+			<!-- images go into this column-->
+			<img class="responsive-img" src="images/Questionbubbles.png" height="auto" style="padding-top: 30px;">
+		</div>
+	</div>
+
+	<div class="row" style="color: white; margin: 0px; text-align: center; background-color: #434651; padding-top: 30px; padding-bottom: 50px">
+		<div class="col m2 offset-m1">
+			<div>
+				<span style="font-size: 40px; padding-left:3%;">Aaron</span>
+				<span style="font-size: 15px;">for Slack</span>
+			</div>
+			<div>
+				<span>2016 All Rights Reserved</span>
+			</div>
+		</div>
+		<div class="col m2">
+			<h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">INFO</h1>
+			<a href="#">About/History</a>
+			<a href="#">Our Team</a>
+			<a href="#">FAQ</a>
+			<a href="#">Company Users</a>
+			<a href="#">Legal Network</a>
+			<a href="#">Support</a>
+		</div>
+		<div class="col m2">
+			<h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">LEGAL</h1>
+			<a href="#">Security</a>
+			<a href="#">Terms of Service</a>
+			<a href="#">Private Policy</a>
+		</div>
+		<div class="col m2">
+			<h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">
+				CONTACT <br>
+				hello@askaaron.io <br>
+				555 555.5555 <br> <br>
+				10001 Some Street <br>
+				City, State, 10000
+			</h2>
+		</div>
+		<div class="col m2">
+			<h1 class="contactInfo" style="font-family: OpenSans, sans-serif;" >FOLLOW US</h1>
+			<a href="#">Facebook</a>
+			<a href="#">Twitter</a>
+			<a href="#">Google+</a>
+			<a href="#">Blog</a>
+		</div>
+
+	</div>
+
+</div><!-- screenshot end-->
+</div>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".button-collapse").sideNav();
+	});
+</script>
+</body>
+</html>
