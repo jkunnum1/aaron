@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
   <head>
     <!--Import Google Icon Font-->
@@ -12,39 +12,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.collapsible').collapsible({
-          accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-        });
-    });
-    var react = document.getElementById('faq-question');
-    react.onclick = function() {
-      this.style.backgroundColor = 'green';
-    }
-  </script>
-
   <body>
     <div class="row">
       <nav class="blue-grey darken-2">
         <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo" style="padding-left: 20px;">
+        <a href="index.html" class="brand-logo" style="padding-left: 20px;">
             <span style="color: white; font-size: 30px; padding-left:3%;">Aaron</span>
             <span style="color: white; font-size: 10px;">for Slack</span>
           </a>
-
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#"><span id="navitem">How Aaron Works</span></a></li>
+            <li><a href="#faq"><span id="navitem">FAQ</span></a></li>
             <li><a href="#"><span id="navitem">Contact Us</span></a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
             <li><a href="#"><span id="navitem" style="color: black;">How Aaron Works</span></a></li>
+            <li><a href="#"><span id="navitem" style="color: black;">FAQ</span></a></li>
             <li><a href="#"><span id="navitem" style="color: black;">Contact Us</span></a></li>
           </ul>
         </div>
       </nav>
     </div> <!-- row 1 nav end -->
+
 
     <div class="row" id="top">
       <div class="container">
@@ -109,7 +99,7 @@
       <form>
 
         <div class="row">
-          <div class="col s8 offset-m2">
+          <div class="col s12 m8 offset-m2">
             <div class="row">
               <div class="input-field col s6">
                 <span style="font-size: 18px;">First Name</span>
@@ -141,7 +131,7 @@
               <div class="col s12" style="background-color: white; margin: 10px; border-radius: 10px; border-color: #455A64; border-style: solid; padding: 20px;">
                 <span style="font-size: 18px;">Please check all that apply</span>
                 <div class="row">
-                  <div class="col s12 m4">
+                  <div class="col s4">
                     <input type="checkbox" id="administrative">
                     <label for="administrative" style="color: #434651; padding-left: 25px;">Administrative</label></br>
 
@@ -158,7 +148,7 @@
                     <label for="consumer" style="color: #434651; padding-left: 25px;">Consumer</label></br>
                   </div>
 
-                  <div class="col s12 m4">
+                  <div class="col s4">
                     <input type="checkbox" id="copyright">
                     <label for="copyright" style="color: #434651; padding-left: 25px;">Copyright</label></br>
 
@@ -175,7 +165,7 @@
                     <label for="internet" style="color: #434651; padding-left: 25px;">Internet</label></br>
                   </div>
 
-                  <div class="col s12 m4">
+                  <div class="col s4">
                     <input type="checkbox" id="patent">
                     <label for="patent" style="color: #434651; padding-left: 25px;">Patent</label></br>
 
@@ -260,5 +250,10 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+    });
+  </script>
 </body>
 </html>

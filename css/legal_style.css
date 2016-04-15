@@ -111,6 +111,12 @@ a
 	{
 		display: none;
 	}
+	#faq-pic1 {
+		display: none;
+	}
+	#faq-pic2 {
+		display: none;
+	}
 
 }
 
@@ -129,7 +135,12 @@ a
 	{
 		display: none;
 	}
-
+	#faq-pic1 {
+		display: block;
+	}
+	#faq-pic2 {
+		display: block;
+	}
 }
 
 /* Larger than tablet */
@@ -150,6 +161,12 @@ a
 	}
 	#desktop_screenshot
 	{
+		display: block;
+	}
+	#faq-pic1 {
+		display: block;
+	}
+	#faq-pic2 {
 		display: block;
 	}
 }
