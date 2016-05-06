@@ -22,14 +22,14 @@
           </a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#"><span id="navitem">How Aaron Works</span></a></li>
-            <li><a href="#faq"><span id="navitem">FAQ</span></a></li>
-            <li><a href="#"><span id="navitem">Contact Us</span></a></li>
+            <li><a href="index.html"><span id="navitem">Home</span></a></li>
+            <li><a href="index.html"><span id="navitem">FAQ</span></a></li>
+            <li><a href="#contactInfo"><span id="navitem">Contact Us</span></a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
-            <li><a href="#"><span id="navitem" style="color: black;">How Aaron Works</span></a></li>
-            <li><a href="#"><span id="navitem" style="color: black;">FAQ</span></a></li>
-            <li><a href="#"><span id="navitem" style="color: black;">Contact Us</span></a></li>
+            <li><a href="index.html"><span id="navitem" style="color: black;">Home</span></a></li>
+            <li><a href="index.html"><span id="navitem" style="color: black;">FAQ</span></a></li>
+            <li><a href="#contactInfo"><span id="navitem" style="color: black;">Contact Us</span></a></li>
           </ul>
         </div>
       </nav>
@@ -96,7 +96,7 @@
         </div>
       </div>
 
-      <form>
+      <form action="send_email.php" method="get">
 
         <div class="row">
           <div class="col s12 m8 offset-m2">
@@ -128,58 +128,68 @@
 
             <div class="row">
               <span style="font-size: 18px; padding-left: 15px;">Areas of Law</span>
-              <div class="col s12" style="background-color: white; margin: 10px; border-radius: 10px; border-color: #455A64; border-style: solid; padding: 20px;">
+              <div class="col s12" style="background-color: white; margin: 10 10 10 10px; border-radius: 10px; border-color: #455A64; border-style: solid; padding: 20px;">
                 <span style="font-size: 18px;">Please check all that apply</span>
                 <div class="row">
-                  <div class="col s4">
+                  <div class="col s6 m4">
                     <input type="checkbox" id="administrative">
-                    <label for="administrative" style="color: #434651; padding-left: 25px;">Administrative</label></br>
-
+                    <label for="administrative" style="color: #434651; padding-left: 25px;">Administrative</label>
+                  </div>
+                  <div class="col s6 m4">
                     <input type="checkbox" id="advertising">
-                    <label for="advertising" style="color: #434651; padding-left: 25px;">Advertisting</label></br>
-
+                    <label for="advertising" style="color: #434651; padding-left: 25px;">Advertisting</label>
+                  </div>
+                  <div class="col s6 m4">
                     <input type="checkbox" id="banking">
-                    <label for="banking" style="color: #434651; padding-left: 25px;">Banking</label></br>
-
+                    <label for="banking" style="color: #434651; padding-left: 25px;">Banking</label>
+                  </div>
+                  <div class="col s6 m4">
                     <input type="checkbox" id="business">
-                    <label for="business" style="color: #434651; padding-left: 25px;">Business</label></br>
-
+                    <label for="business" style="color: #434651; padding-left: 25px;">Business</label>
+                  </div>
+                  <div class="col s6 m4">
                     <input type="checkbox" id="consumer">
-                    <label for="consumer" style="color: #434651; padding-left: 25px;">Consumer</label></br>
+                    <label for="consumer" style="color: #434651; padding-left: 25px;">Consumer</label>
                   </div>
-
-                  <div class="col s4">
+                  <div class="col s6 m4">
                     <input type="checkbox" id="copyright">
-                    <label for="copyright" style="color: #434651; padding-left: 25px;">Copyright</label></br>
-
-                    <input type="checkbox" id="corporate">
-                    <label for="corporate" style="color: #434651; padding-left: 25px;">Corporate</label></br>
-
-                    <input type="checkbox" id="employment">
-                    <label for="employment" style="color: #434651; padding-left: 25px;">Employment</label></br>
-
-                    <input type="checkbox" id="health">
-                    <label for="health" style="color: #434651; padding-left: 25px;">Health</label></br>
-
-                    <input type="checkbox" id="internet">
-                    <label for="internet" style="color: #434651; padding-left: 25px;">Internet</label></br>
+                    <label for="copyright" style="color: #434651; padding-left: 25px;">Copyright</label>
                   </div>
-
-                  <div class="col s4">
+                  <div class="col s6 m4">
+                    <input type="checkbox" id="corporate">
+                    <label for="corporate" style="color: #434651; padding-left: 25px;">Corporate</label>
+                  </div>
+                  <div class="col s6 m4">
+                    <input type="checkbox" id="employment">
+                    <label for="employment" style="color: #434651; padding-left: 25px;">Employment</label>
+                  </div>
+                  <div class="col s6 m4">
+                    <input type="checkbox" id="health">
+                    <label for="health" style="color: #434651; padding-left: 25px;">Health</label>
+                  </div>
+                  <div class="col s6 m4">
+                    <input type="checkbox" id="internet">
+                    <label for="internet" style="color: #434651; padding-left: 25px;">Internet</label>
+                  </div>
+                  <div class="col s6 m4">
                     <input type="checkbox" id="patent">
-                    <label for="patent" style="color: #434651; padding-left: 25px;">Patent</label></br>
-
+                    <label for="patent" style="color: #434651; padding-left: 25px;">Patent</label>
+                  </div>
+                  <div class="col s6 m4">
                     <input type="checkbox" id="privacy">
-                    <label for="privacy" style="color: #434651; padding-left: 25px;">Privacy</label></br>
-
+                    <label for="privacy" style="color: #434651; padding-left: 25px;">Privacy</label>
+                  </div>
+                  <div class="col s6 m4">
                     <input type="checkbox" id="security">
-                    <label for="security" style="color: #434651; padding-left: 25px;">Security</label></br>
-
+                    <label for="security" style="color: #434651; padding-left: 25px;">Security</label>
+                  </div>
+                  <div class="col s6 m4">
                     <input type="checkbox" id="technology">
-                    <label for="technology" style="color: #434651; padding-left: 25px;">Technology</label></br>
-
+                    <label for="technology" style="color: #434651; padding-left: 25px;">Technology</label>
+                  </div>
+                  <div class="col s6 m4">
                     <input type="checkbox" id="trademark">
-                    <label for="trademark" style="color: #434651; padding-left: 25px;">Trademark</label></br>
+                    <label for="trademark" style="color: #434651; padding-left: 25px;">Trademark</label>
                   </div>
 
                   <div class="col s12" style="padding-top: 30px;">
@@ -200,8 +210,8 @@
         </div>
       </form>
 
-      <div class="row" style="color: white; margin: 0px; text-align: center; background-color: #434651; padding-top: 30px; padding-bottom: 50px">
-        <div class="col m2 offset-m1">
+      <div class="row" id="contactInfo" style="color: white; margin: 0px; text-align: center; background-color: #434651; padding-top: 30px; padding-bottom: 50px">
+        <div class="col s12 m2 offset-m1" style="padding-bottom: 10px">
           <div>
             <span style="font-size: 40px; padding-left:3%;">Aaron</span>
             <span style="font-size: 15px;">for Slack</span>
@@ -210,7 +220,7 @@
             <span>2016 All Rights Reserved</span>
           </div>
         </div>
-        <div class="col m2">
+        <div class="col s6 m2" style="padding-bottom: 10px">
           <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">INFO</h1>
           <a href="#">About/History</a>
           <a href="#">Our Team</a>
@@ -219,29 +229,28 @@
           <a href="#">Legal Network</a>
           <a href="#">Support</a>
         </div>
-        <div class="col m2">
+        <div class="col s6 m2" style="padding-bottom: 10px">
           <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">LEGAL</h1>
           <a href="#">Security</a>
           <a href="#">Terms of Service</a>
           <a href="#">Private Policy</a>
         </div>
-        <div class="col m2">
+        <div class="col s6 m2" style="padding-bottom: 10px">
+          <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;" >FOLLOW US</h1>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Google+</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="col s6 m2" style="padding-bottom: 10px">
           <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">
             CONTACT <br>
             hello@askaaron.io <br>
             555 555.5555 <br> <br>
             10001 Some Street <br>
             City, State, 10000
-          </h2>
+          </h1>
         </div>
-        <div class="col m2">
-          <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">FOLLOW US</h1>
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Google+</a>
-          <a href="#">Blog</a>
-        </div>
-
       </div>
 
     </div><!-- screenshot end-->

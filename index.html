@@ -25,13 +25,13 @@
   					<li><a href="expert-apply.html"><span id="navitem">Expert Application</span></a></li>
   					<li><a href="#"><span id="navitem">How Aaron Works</span></a></li>
   					<li><a href="#faq"><span id="navitem">FAQ</span></a></li>
-  					<li><a href="#"><span id="navitem">Contact Us</span></a></li>
+  					<li><a href="#contactInfo"><span id="navitem">Contact Us</span></a></li>
   				</ul>
   				<ul class="side-nav" id="mobile-demo">
   					<li><a href="expert-apply.html"><span id="navitem" style="color: black;">Expert Application</span></a></li>
   					<li><a href="#"><span id="navitem" style="color: black;">How Aaron Works</span></a></li>
   					<li><a href="#"><span id="navitem" style="color: black;">FAQ</span></a></li>
-  					<li><a href="#"><span id="navitem" style="color: black;">Contact Us</span></a></li>
+  					<li><a href="#contactInfo"><span id="navitem" style="color: black;">Contact Us</span></a></li>
   				</ul>
   			</div>
   		</nav>
@@ -41,7 +41,12 @@
   		<div class="container" style="padding: 0px;">
 
   			<div class="col s12" align="center">
-  				<h1 style="color: #485A63;">Hello, my name is Aaron.</h1>
+    			<!-- <div>
+    			<img class="responsive-img" src="images/HelloBubble.png" style="width: 20%; height: auto; float: left;">
+    			</div> -->
+    			<div>
+  					<h1 style="color: #485A63;">Hello, my name is Aaron.</h1>
+  				</div>
   			</div>
   			<div class="col s10" align="center" style="margin-right: 0px; padding-right: 0px;">
   				<span><h5 style="color: #485A63;">I'm a Slack bot that privately connects you with an elite lawyer whenever you have a legal question, right in Slack.</h5></span>
@@ -60,12 +65,13 @@
           <form>
             <div class="col s8">
               <input type="text" id="email" placeholder="Enter your e-mail address"></input>
-            </div> 
-
-            <div class="col s4">
-              <a href="https://slack.com/oauth/authorize?scope=incoming-webhook,bot&client_id=19221024294.23919050657" style="text-align: center; padding-top: 10px;"><img alt="Add to Slack" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
-			  </a>
             </div>
+          -->
+            <div class="col s4">
+              <a href="https://slack.com/oauth/authorize?scope=incoming-webhook,im:read,bot&client_id=19221024294.35340743952"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x" />
+              </a>
+            </div>
+            <!--
         </form>  -->
         <div class="col s12">
 
@@ -186,50 +192,48 @@
 		</div>
 	</div>
 
-	<div class="row" style="color: white; margin: 0px; text-align: center; background-color: #434651; padding-top: 30px; padding-bottom: 50px">
-		<div class="col s12 m2 offset-m1" style="padding-bottom: 10px">
-			<div>
-				<span style="font-size: 40px; padding-left:3%;">Aaron</span>
-				<span style="font-size: 15px;">for Slack</span>
-			</div>
-			<div>
-				<span>2016 All Rights Reserved</span>
-			</div>
-		</div>
-		<div class="col s3 m2" style="padding-bottom: 10px">
-			<h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">INFO</h1>
-			<a href="#">About/History</a>
-			<a href="#">Our Team</a>
-			<a href="#">FAQ</a>
-			<a href="#">Company Users</a>
-			<a href="#">Legal Network</a>
-			<a href="#">Support</a>
-		</div>
-		<div class="col s3 m2" style="padding-bottom: 10px">
-			<h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">LEGAL</h1>
-			<a href="#">Security</a>
-			<a href="#">Terms of Service</a>
-			<a href="#">Private Policy</a>
-		</div>
-		<div class="col s3 m2" style="padding-bottom: 10px">
-			<h1 class="contactInfo" style="font-family: OpenSans, sans-serif;" >FOLLOW US</h1>
-			<a href="#">Facebook</a>
-			<a href="#">Twitter</a>
-			<a href="#">Google+</a>
-			<a href="#">Blog</a>
-		</div>
-		<div class="col s3 m2 hide-on-small-only" style="padding-bottom: 10px">
-			<h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">
-				CONTACT <br>
-				hello@askaaron.io <br>
-				555 555.5555 <br> <br>
-				10001 Some Street <br>
-				City, State, 10000
-			</h2>
-		</div>
-		
-
-	</div>
+	<div class="row" id="contactInfo" style="color: white; margin: 0px; text-align: center; background-color: #434651; padding-top: 30px; padding-bottom: 50px">
+        <div class="col s12 m2 offset-m1" style="padding-bottom: 10px">
+          <div>
+            <span style="font-size: 40px; padding-left:3%;">Aaron</span>
+            <span style="font-size: 15px;">for Slack</span>
+          </div>
+          <div>
+            <span>2016 All Rights Reserved</span>
+          </div>
+        </div>
+        <div class="col s6 m2" style="padding-bottom: 10px">
+          <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">INFO</h1>
+          <a href="#">About/History</a>
+          <a href="#">Our Team</a>
+          <a href="#">FAQ</a>
+          <a href="#">Company Users</a>
+          <a href="#">Legal Network</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="col s6 m2" style="padding-bottom: 10px">
+          <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">LEGAL</h1>
+          <a href="#">Security</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Private Policy</a>
+        </div>
+        <div class="col s6 m2" style="padding-bottom: 10px">
+          <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;" >FOLLOW US</h1>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Google+</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="col s6 m2" style="padding-bottom: 10px">
+          <h1 class="contactInfo" style="font-family: OpenSans, sans-serif;">
+            CONTACT <br>
+            hello@askaaron.io <br>
+            555 555.5555 <br> <br>
+            10001 Some Street <br>
+            City, State, 10000
+          </h1>
+        </div>
+      </div>
 
 </div><!-- screenshot end-->
 </div>

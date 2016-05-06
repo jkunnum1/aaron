@@ -98,7 +98,7 @@ a
 
 /*Media Queries*/
 /* Larger than mobile */
-@media (min-width: 250px) {
+@media (min-width: 200px) {
 	#mobile_screenshot
 	{
 		display: block;
@@ -121,7 +121,7 @@ a
 }
 
 /* Larger than tablet (also point when grid becomes active) */
-@media (min-width: 550px) {
+@media (min-width: 500px) {
 
  	#mobile_screenshot
 	{
@@ -144,13 +144,13 @@ a
 }
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media (min-width: 700px) {
 
   
 }
 
 /* Larger than desktop */
-@media (min-width: 1000px) {
+@media (min-width: 950px) {
  	#mobile_screenshot
 	{
 		display: none;
