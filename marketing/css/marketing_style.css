@@ -1,0 +1,269 @@
+html
+{
+	font-family: "Open Sans";
+	background-color: #52A2CD;
+	color: #325177;
+}
+
+#navitem
+{
+	color: white;
+}
+
+h1
+{
+	font-family: "Tiempo";
+}
+
+h3, h2
+{
+	font-family: "Open Sans"
+}
+
+#top
+{
+	text-align: center;
+}
+
+#allonslack
+{
+	opacity: 0.7;
+}
+
+.waves-effect.waves-light.btn-flat
+{
+	color: white;
+	background-color: #62D2C2;
+	border-radius: 7px;
+}
+
+#email
+{
+	font-size: 20px;
+	border: none;
+	padding: 5px 15px 5px 15px;
+	border-radius: 7px;
+	color: #2B4655;
+	background-color: white;
+
+}
+
+#submit
+{
+	background-color: #CF7275;
+	border: none;
+	padding: 15px;
+	border-radius: 7px;
+	color: white;
+	margin-left: 25px;
+}
+
+form
+{
+	margin-top: 40px;
+}
+
+#screenshot
+{
+	background-color: white;
+}
+
+#howitworks
+{
+	background-color:white;
+	color: white;
+	padding: 0px;
+}
+
+#slackbubble
+{
+	margin-top: 25px;
+}
+
+a 
+{
+	text-decoration-line: none;
+	color: white;
+	display: block;
+	text-align: left;
+}
+
+.contactInfo 
+{
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+/*Media Queries*/
+/* Larger than mobile */
+@media (min-width: 200px) {
+	#mobile_screenshot
+	{
+		display: block;
+	}
+	#tablet_screenshot
+	{
+		display: none;
+	}
+	#desktop_screenshot
+	{
+		display: none;
+	}
+	#faq-pic1 {
+		display: none;
+	}
+	#faq-pic2 {
+		display: none;
+	}
+
+}
+
+/* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 500px) {
+
+ 	#mobile_screenshot
+	{
+		display: none;
+	}
+	#tablet_screenshot
+	{
+		display: block;
+	}
+	#desktop_screenshot
+	{
+		display: none;
+	}
+	#faq-pic1 {
+		display: block;
+	}
+	#faq-pic2 {
+		display: block;
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 700px) {
+
+  
+}
+
+/* Larger than desktop */
+@media (min-width: 950px) {
+ 	#mobile_screenshot
+	{
+		display: none;
+	}
+	#tablet_screenshot
+	{
+		display: none;
+	}
+	#desktop_screenshot
+	{
+		display: block;
+	}
+	#faq-pic1 {
+		display: block;
+	}
+	#faq-pic2 {
+		display: block;
+	}
+}
+
+[data-maitre-form], [data-maitre-content].show, [data-maitre-people-behind-text].show {
+  display: block;
+}
+
+[data-maitre-form].hide, [data-maitre-content], [data-maitre-people-behind-text] {
+  display: none;
+}
+
+#maitre-widget-container {
+	text-align: center;
+}
+
+#maitre-widget-container div.maitre-field {
+	width: 100%;
+	display: inline;
+}
+
+#maitre-widget-container input {
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+	background-color: white;
+	text-align: center;
+	width: 100%;
+	max-width: 400px;
+	font-size: 24;
+
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
+
+#maitre-widget-container button {
+	background-color: #FF528F;
+	color: white;
+	border-radius: 10px;
+	padding: 12px 30px 12px 30px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+	border:none;
+	margin-bottom: 10px;
+}
+
+#maitre-widget-container a {
+	color: #345375;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.input-field input {
+	border: none;
+    background-color: white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #455A64;
+    font-size: 16px;
+    text-indent: 20px;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 0px solid #000;
+    box-shadow: 0 0px 0 0 #000;
+    border: none;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #455A64;
+ }
+
+ .input-field input[type=email]:focus {
+    border-bottom: 0px solid #000;
+    box-shadow: 0 0px 0 0 #000;
+    border: none;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #455A64;
+ }
+
+ .submit_button {
+ 	background-color: #FE4F52;
+ 	color: #403E41;
+	border-radius: 10px;
+	padding: 17px 50px 17px 50px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+	border:none;
+	margin-bottom: 10px;
+	font-size: 18px;
+ }
